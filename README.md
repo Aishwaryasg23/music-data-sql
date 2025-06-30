@@ -1,10 +1,10 @@
-# music-data-sql
 # 🎵 Music Store Data Analysis (SQL)
 
 ## 📌 Table of Contents
 - [About](#about)
 - [Project Description](#project-description)
 - [What I Did](#what-i-did)
+- [Main Key Points](#main-key-points)
 - [Usage](#usage)
 - [Features](#features)
 - [How to Run](#how-to-run)
@@ -47,6 +47,23 @@ In this project, I worked on various SQL queries that reflect real-world busines
 
 This work demonstrates my knowledge of SQL fundamentals, aggregations, joins, subqueries, and CTEs for solving complex business questions.
 
+
+---
+
+## 📌 Main Key Points
+
+- 🔸 **Top employee** identified using `ORDER BY levels DESC`.
+- 🔸 **Country with highest invoice count** extracted using `GROUP BY billing_country`.
+- 🔸 **Top 3 invoices** listed by total amount.
+- 🔸 **Top cities** determined by summed invoice totals.
+- 🔸 **Top 3 spending customers** identified via joins between `customer` and `invoice`.
+- 🔸 **Rock music listeners' details** fetched using nested `IN` queries and genre filters.
+- 🔸 **Most featured rock artists** calculated using joins and group counts.
+- 🔸 **Average track length** computed, and above-average tracks listed.
+- 🔸 **Best-selling artist and supporting customers** found using CTE and multi-level joins.
+
+These highlight skills in filtering, joining multiple tables, working with aggregates, subqueries, and Common Table Expressions (CTEs).
+
 ---
 
 ## 🚀 Usage
@@ -67,11 +84,3 @@ This work demonstrates my knowledge of SQL fundamentals, aggregations, joins, su
 
 ---
 
-## 🛠️ How to Run
-
-```sql
-USE music_store;
-
--- Run individual sections like:
-/* EASY 1 */
-SELECT * FROM employee;
